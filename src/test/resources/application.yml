@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: country-service
+  cloud:
+    config:
+      enabled: false
+eureka:
+  client:
+    enabled: false

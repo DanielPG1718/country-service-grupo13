@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: country-service
+  config:
+    import: configserver:http://localhost:8888
+
+restcountries:
+  v5:
+    base-url: ${RESTCOUNTRIES_BASE_URL:https://api.restcountries.com/countries/v5}
+    api-key: ${RESTCOUNTRIES_API_KEY:}
